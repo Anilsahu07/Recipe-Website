@@ -16,7 +16,7 @@ const App = () => {
 
 
   return (
-    <div className=' h-full w-full flex flex-col items-center box-border'>
+    <div className=' md:h-full md:w-full flex flex-col items-center box-border'>
       <div className='w-full h-fit bg-black flex justify-evenly items-center pt-40 py-3 '>
         <h1 className='text-white text-6xl font-bold'>Food <small className='text-orange-500 text-6xl'>.</small></h1>
         <Navbar/>

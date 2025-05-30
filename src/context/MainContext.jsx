@@ -10,7 +10,7 @@ const MainContext = ({children}) => {
 
 
   const filters= info.filter(rec=>(
-    [rec.title, rec.chefname, rec.catagory].some(field=> field.toLowerCase().includes(search.toLowerCase()))
+    [rec.title, rec.chefname, rec.catagory, rec.description, rec.instructions, rec.ingradients].some(field=> field.toLowerCase().includes(search.toLowerCase()))
   //  filter? rec.title.toLowerCase().includes(filter.title.toLowerCase()):false)
   ))
  

@@ -28,8 +28,8 @@ const RecipeTemplate = (props) => {
       <Link className="w-fit h-fit duration-200 hover:scale-95 font-[montserrat] p-5 rounded-xl flex flex-col text-center items-center bg-black text-white"
        to={`/recipes/details:${id}`}>
         <img className='w-44 h-44 rounded-full' src={image} alt="error404" />
-        <h3 className='p-1 font-serif '><strong className='text-xl underline'>TITLE:</strong> {title}</h3>
-        <p className='p-1 font-serif '> <strong className='underline'>CHEF NAME: </strong> {chefname}</p>
+        <h3 className='p-1 font-serif '><strong className='text-xl text-gray-400'>TITLE:</strong> {title}</h3>
+        <p className='p-1 font-serif text-sm '> <strong className='underline'>CHEF NAME: </strong> {chefname}</p>
         <p className='p-1 font-serif text-sm'> <strong className='underline'>DESCRIPTION:</strong> {description}</p>
         <p className='p-1 font-serif  text-sm'><strong className='underline'>INSTRUCTIONS:</strong> {instructions}</p>
         <p className='p-1 font-serif  text-sm'><strong className='underline'>INGRADIENTS: </strong> {ingradients}</p>
