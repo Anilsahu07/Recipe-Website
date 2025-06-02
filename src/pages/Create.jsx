@@ -33,7 +33,7 @@ const Create = () => {
 
   return (
     <div className=' flex justify-center p-9 bg-slate-50'>
-      <form action="" className=' p-7 text-black flex flex-col justify-center gap-2 rounded-xl w-fit' onSubmit={handleSubmit(formSubmitHandler)}>
+      <form action="" className=' text-black flex flex-col justify-center gap-2 rounded-xl' onSubmit={handleSubmit(formSubmitHandler)}>
         <input className='p-3 border-b-2 w-[400px]  border-black rounded' {...register("image",{required:true})} type="url"  placeholder='Image'/> { errors.image? <p className='text-red-600 mb-2  text-md font-serif'>Enter Image URL</p>:""}
         <input className='p-3 border-b-2  w-[400px] w- border-black rounded' {...register("title", {required:true})}type="text" placeholder='Title' /> { errors.title? <p className='text-red-600 mb-2 text-md font-serif'>Fill title</p>:""}
         <input className='p-3 border-b-2  w-[400px] w- border-black rounded' {...register("chefname", {required:true})}type="text" placeholder='Chef Name' /> { errors.chefname? <p className='text-red-600 mb-2 text-md font-serif'>Fill Chef Name</p>:""}

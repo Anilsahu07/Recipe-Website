@@ -25,7 +25,7 @@ const App = () => {
  useEffect(() => {
   if (menu) {
      gsap.to(menuRef.current,{
-      y:40,
+      y:10,
       duration:0.5,
       background:"black"
       // background:"black"
