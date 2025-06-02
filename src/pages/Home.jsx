@@ -7,7 +7,7 @@ const Home = () => {
     navigate("/recipes")
   }
   return (
-    <div className=' h-full p-4'>
+    <div className=' h-full p-2 w-full'>
       {/* <h1 className='font-bold font-serif text-2xl  text-center'>Welcome to the Recipe World</h1> */}
       {/* <img className='w-full h-[650px]' src={food} alt="" /> */}
       <div className='h-[600px] bg-cover bg-center flex justify-center items-start p-9 flex-col gap-5 rounded-s-3xl' style={{backgroundImage: "url('https://cdn.pixabay.com/photo/2022/03/19/12/33/side-dish-7078451_1280.jpg')"}}>

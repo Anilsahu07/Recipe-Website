@@ -25,7 +25,6 @@ const App = () => {
  useEffect(() => {
   if (menu) {
      gsap.to(menuRef.current,{
-      y:10,
       duration:0.5,
       background:"black"
       // background:"black"
@@ -38,8 +37,8 @@ const App = () => {
 
 
   return (
-    <div className=' flex flex-col items-end box-border'>
-      <div className=' w-full h-fit bg-black flex items-center justify-around pt-36 py-3'>
+    <div className=' flex flex-col box-border'>
+      <div className='w-full bg-black flex items-center justify-around pt-36 py-3'>
         <h1 className='text-white text-6xl font-bold flex justify-center items-center'>Food <small className='text-orange-500 text-6xl'>.</small></h1>
         <div className=''>
          <Navbar />
@@ -57,7 +56,7 @@ const App = () => {
         </div> 
       </div>
       {menu&&
-          <div ref={menuRef} className='flex flex-col gap-2 px-6 py-6  w-fit items-center'>
+          <div ref={menuRef} className='w-full flex flex-col gap-2 px-6 py-6 items-center outline outline-neutral-300'>
              <Link className='font-[montserrat] font-semibold text-white' to="/">HOME</Link>
              <Link className='font-[montserrat] font-semibold text-white' to="/recipes/about">ABOUT</Link>
              <Link className='font-[montserrat] font-semibold text-red-600 hover:text-white' to="/recipes/create">CREATE</Link>
