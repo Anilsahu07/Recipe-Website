@@ -25,7 +25,7 @@ const App = () => {
  useEffect(() => {
   if (menu) {
      gsap.to(menuRef.current,{
-      y:100,
+      y:70,
       duration:0.5,
       background:"black"
       // background:"black"
@@ -38,7 +38,7 @@ const App = () => {
 
 
   return (
-    <div className=' w-full flex flex-col items-end box-border'>
+    <div className=' flex flex-col items-end box-border'>
       <div className=' w-full h-fit bg-black flex items-center justify-around pt-36 py-3'>
         <h1 className='text-white text-6xl font-bold flex justify-center items-center'>Food <small className='text-orange-500 text-6xl'>.</small></h1>
         <div className=''>
