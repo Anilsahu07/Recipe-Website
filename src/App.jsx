@@ -26,7 +26,10 @@ const App = () => {
   if (menu) {
      gsap.to(menuRef.current,{
       duration:0.5,
-      background:"black"
+      top:60,
+      opacity:1,
+      background:"whitesmoke",
+      // ease:"bounce"
       // background:"black"
     })
    
@@ -37,15 +40,15 @@ const App = () => {
 
 
   return (
-    <div className=' flex flex-col box-border'>
-      <div className='w-full bg-black flex items-center justify-around pt-36 py-3'>
-        <h1 className='text-white text-6xl font-bold flex justify-center items-center'>Food <small className='text-orange-500 text-6xl'>.</small></h1>
+    <div className='w-screen flex flex-col box-border items-end'>
+      <div className='w-full bg-black flex items-center justify-around lg:pt-36 lg:py-3 px-0 py-2 '>
+        <h1 className='text-white lg:text-6xl text-4xl font-bold flex justify-center items-center'><small className='text-orange-600 lg:text-6xl text-4xl font-bold flex justify-center items-center'>F</small>ood <small className='text-orange-500 lg:text-6xl text-4xl'>.</small></h1>
         <div className=''>
          <Navbar />
         </div>
         
         <div className=' flex items-center gap-4'>
-          <i onClick={navigateSearch}  className="hover:text-orange-600 font-bold text-3xl ri-search-line text-white flex active:scale-90">
+          <i onClick={navigateSearch}  className="hover:text-orange-600 font-bold lg:text-3xl ri-search-line text-white flex active:scale-90 text-2xl">
           </i>
           <i className="hover:text-green-600 font-bold text-3xl ri-price-tag-line text-white active:scale-90 md:flex hidden"></i>
           <i className="hover:text-yellow-600 font-bold text-3xl ri-user-3-line text-white active:scale-90 md:flex hidden"></i>
@@ -56,14 +59,14 @@ const App = () => {
         </div> 
       </div>
       {menu&&
-          <div ref={menuRef} className='w-full flex flex-col gap-2 px-6 py-6 items-center outline outline-neutral-300'>
-             <Link className='font-[montserrat] font-semibold text-white' to="/">HOME</Link>
-             <Link className='font-[montserrat] font-semibold text-white' to="/recipes/about">ABOUT</Link>
-             <Link className='font-[montserrat] font-semibold text-red-600 hover:text-white' to="/recipes/create">CREATE</Link>
-             <Link className='font-[montserrat] font-semibold text-white' to="/favourite">FAVOURITE</Link>
-             <Link className='font-[montserrat] font-semibold text-white' to="*">PAGE NOT FOUND</Link>
-             <Link className='font-[montserrat] font-semibold text-white' to="/recipes">RECIPES</Link>
-             <Link className='font-[montserrat] font-semibold text-white' to="/recipes/update">UPDATE</Link>
+          <div ref={menuRef} className='w-1/2 flex flex-col gap-3 px-6 py-6 absolute top-[7.3%] '>
+             <Link className='font-[montserrat] text-sm font-light text-black ' to="/">HOME</Link>
+             <Link className='font-[montserrat] text-sm font-light text-black' to="/recipes/about">ABOUT</Link>
+             <Link className='font-[montserrat] text-sm font-semibold text-red-600 hover:text-white' to="/recipes/create">CREATE</Link>
+             <Link className='font-[montserrat] text-sm font-light text-black' to="/favourite">FAVOURITE</Link>
+             <Link className='font-[montserrat] text-sm font-light text-black' to="*">PAGE NOT FOUND</Link>
+             <Link className='font-[montserrat] text-sm font-light text-black' to="/recipes">RECIPES</Link>
+             <Link className='font-[montserrat] text-sm font-light text-black' to="/recipes/update">UPDATE</Link>
           </div>
           }
 

@@ -4,7 +4,7 @@ import { RecipeContext } from '../context/MainContext'
 const Search = () => {
   const{search, setsearch,filters}=  useContext(RecipeContext)
   return (
-    <div className='h-full w-full flex justify-center flex-col items-center gap-3 p-3'>
+    <div className='h-full w-screen flex justify-center flex-col items-center gap-3 p-3'>
             <h1 className='text-2xl text-wrap font-bold font-[montserrat] flex gap-4 justify-center items-center'>Search <h1 className='text-red-600 text-xl'>youR</h1> Recipe</h1>
             <input placeholder='Search here ...' value={search}  name='title' onChange={(e)=>setsearch(e.target.value)} type="text" className='border border-black rounded font-normal text-lg text-black p-1 w-full bg-gray-100' />
 

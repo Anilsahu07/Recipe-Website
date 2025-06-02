@@ -37,7 +37,7 @@ const RecipeTemplate = (props) => {
   
   return (
     <div className='flex flex-col items-center gap-2 '>
-      <Link className="max-w-fit duration-200 hover:scale-90 hover:bg-orange-100 font-[montserrat] p-5 rounded-xl flex flex-col text-center items-center gap-2 h-fit outline">
+      <Link className="w-full lg:w-fit duration-200 hover:scale-90 hover:bg-orange-100 font-[montserrat] p-5 rounded-xl flex flex-col text-center items-center gap-2 h-fit outline">
         <img className='w-52 h-52 rounded-full border object-cover hover:outline' src={image} alt="error404" />
 
         {fav.find((e)=>e.id ===id)?(<i onClick={unFavRecipe} className="mt-3 ri-heart-fill text-5xl text-red-500"></i>):(<i onClick={favRecipe}   className="mt-3 ri-heart-3-line text-5xl text-red-500"></i>)}

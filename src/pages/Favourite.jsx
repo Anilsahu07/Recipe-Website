@@ -11,7 +11,7 @@ const Favourite = () => {
   }
   
   if (fav.length<1) {
-    return <div className='w-screen h-full flex justify-center items-center mt-5 p-2'><h1 className='text-xl font-semibold text-green-600 font-[poppins]'>No Recipe Added to Favourite !! 😔</h1></div>
+    return <div className='w-screen h-52 p-5 flex items-center'><h1 className='text-xl text-center font-semibold text-green-600 font-[poppins]'>No Recipe Added to Favourite !! 😔</h1></div>
   }
   
  
