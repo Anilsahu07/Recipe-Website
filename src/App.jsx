@@ -57,7 +57,7 @@ const App = () => {
         </div> 
       </div>
       {menu&&
-          <div ref={menuRef} className='flex flex-col gap-2 px-6 py-6  w-fit items-center absolute top-[15%]'>
+          <div ref={menuRef} className='flex flex-col gap-2 px-6 py-6  w-fit items-center'>
              <Link className='font-[montserrat] font-semibold text-white' to="/">HOME</Link>
              <Link className='font-[montserrat] font-semibold text-white' to="/recipes/about">ABOUT</Link>
              <Link className='font-[montserrat] font-semibold text-red-600 hover:text-white' to="/recipes/create">CREATE</Link>
