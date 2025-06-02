@@ -25,11 +25,11 @@ const App = () => {
  useEffect(() => {
   if (menu) {
      gsap.to(menuRef.current,{
-      duration:0.5,
-      top:60,
+      duration:1,
+      top:75,
       opacity:1,
       background:"whitesmoke",
-      // ease:"bounce"
+      ease:"bounce"
       // background:"black"
     })
    
@@ -59,7 +59,7 @@ const App = () => {
         </div> 
       </div>
       {menu&&
-          <div ref={menuRef} className='w-1/2 flex flex-col gap-3 px-6 py-6 absolute top-[7.3%] '>
+          <div ref={menuRef} className='w-1/2 flex flex-col gap-3 px-6 py-6 absolute top-[7%]'>
              <Link className='font-[montserrat] text-sm font-light text-black ' to="/">HOME</Link>
              <Link className='font-[montserrat] text-sm font-light text-black' to="/recipes/about">ABOUT</Link>
              <Link className='font-[montserrat] text-sm font-semibold text-red-600 hover:text-white' to="/recipes/create">CREATE</Link>
