@@ -11,12 +11,12 @@ const Favourite = () => {
   }
   
   if (fav.length<1) {
-    return <div className='w-full h-10 flex justify-center items-center'><h1 className='text-2xl font-semibold text-green-600 font-[poppins]'>No Recipe Added to Favourite !! 😔</h1></div>
+    return <div className='w-screen h-full flex justify-center items-center p-8'><h1 className='text-2xl font-semibold text-green-600 font-[poppins]'>No Recipe Added to Favourite !! 😔</h1></div>
   }
   
  
   return (
-    <div className='min-h-screen flex-wrap justify-center flex p-5 gap-3'>
+    <div className=' flex-wrap justify-center flex p-5 gap-3'>
         {fav.map((rec,i)=>(
         <ul key={i} className='border h-fit border-blue-600  max-w-fit p-5 rounded-xl hover:scale-95 flex flex-col items-center justify-center gap-2.5 hover:bg-slate-200 transition-all duration-100 font-[montserrat] text-center'>
          
