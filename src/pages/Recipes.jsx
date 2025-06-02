@@ -23,15 +23,15 @@ const Recipes = () => {
     localStorage.setItem("info",JSON.stringify(info))
   }, [info])
 
+
   return (
-    <div className='w-full h-full flex flex-col p-3 items-center'>
-       <Link className=' bg-red-500 text-white px-3 py-2 rounded w-fit' to="/recipes/create">Create Recipe</Link>
-       <hr  className='mt-3 outline-dotted w-full'/>
-       <div className='w-full grid grid-cols-5 gap-2 mt-2'>
-        {info.length>0? recipeRender:"Recipe Not found"}
+    <div className=' h-full flex flex-col items-center p-5'>
+       <Link className=' bg-red-600 text-white px-3 py-2 rounded w-fit hover:scale-105 hover:text-gray-100' to="/recipes/create">Create Recipe</Link>
+       <hr  className='mt-3 w-full'/>
+      <div className='w-full flex flex-wrap gap-5 mt-2 px-2 justify-center'>
+        {info.length>0? recipeRender:<h className='font-bold font-serif text-2xl shadow-black shadow p-1'>Recipe not found</h>}
         {/* {recipeRender} */}
        </div>
-      
     </div>
   )
 }

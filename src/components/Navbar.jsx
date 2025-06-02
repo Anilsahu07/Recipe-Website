@@ -5,15 +5,14 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='flex gap-4'>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="/">HOME</Link>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="/about">ABOUT</Link>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="/recipes/create">CREATE</Link>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="/favourite">FAVOURITE</Link>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="*">PAGE NOT FOUND</Link>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="/recipes">RECIPES</Link>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="/recipes/update">UPDATE</Link>
-       <Link className='font-sans font-semibold text-white hover:text-gray-700' to="/recipes/singlerecipe">SINGLE RECIPE</Link>
+    <div className='md:flex hidden'>
+       <Link className='font-[montserrat] font-semibold text-white hover:text-gray-400' to="/">HOME</Link>
+       <Link className='font-[montserrat] font-semibold text-white hover:text-gray-400' to="/recipes/about">ABOUT</Link>
+       <Link className='font-[montserrat] font-semibold text-red-600 hover:text-white' to="/recipes/create">CREATE</Link>
+       <Link className='font-[montserrat] font-semibold text-white hover:text-gray-400' to="/favourite">FAVOURITE</Link>
+       <Link className='font-[montserrat] font-semibold text-white hover:text-gray-400' to="*">PAGE NOT FOUND</Link>
+       <Link className='font-[montserrat] font-semibold text-white hover:text-gray-400' to="/recipes">RECIPES</Link>
+       <Link className='font-[montserrat] font-semibold text-white hover:text-gray-400' to="/recipes/update">UPDATE</Link>
     </div>
   )
 }
