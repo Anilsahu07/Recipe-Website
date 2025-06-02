@@ -32,21 +32,21 @@ const Create = () => {
 
 
   return (
-    <div className='w-full flex justify-cente p-9 bg-slate-50'>
-      <form action="" className=' p-7 text-black flex flex-col justify-center items-center gap-2 rounded-xl w-screen' onSubmit={handleSubmit(formSubmitHandler)}>
-        <input className='p-3 border-b-2 w-1/3  border-black rounded' {...register("image",{required:true})} type="url"  placeholder='Image'/> { errors.image? <p className='text-red-600 mb-2  text-md font-serif'>Enter Image URL</p>:""}
-        <input className='p-3 border-b-2  w-1/3 w- border-black rounded' {...register("title", {required:true})}type="text" placeholder='Title' /> { errors.title? <p className='text-red-600 mb-2 text-md font-serif'>Fill title</p>:""}
-        <input className='p-3 border-b-2  w-1/3 w- border-black rounded' {...register("chefname", {required:true})}type="text" placeholder='Chef Name' /> { errors.chefname? <p className='text-red-600 mb-2 text-md font-serif'>Fill Chef Name</p>:""}
-        <textarea className='p-3 rounded border-b-2 border-black w-1/3' {...register("description")}  placeholder='Enter description'></textarea>
-        <textarea className='p-3 rounded border-b-2 border-black w-1/3' {...register("instructions")}  placeholder='Enter instructions'></textarea>
-        <textarea className='p-3 rounded border-b-2 border-black w-1/3' {...register("ingradients")} placeholder='Enter ingradients'></textarea>
-        <select className='text-black font-[poppins] text-sm bg-gray-100 p-3 rounded border-b-2 border-black w-1/3' name="" id="" {...register("catagory", {required:true})}>
+    <div className=' flex justify-center p-9 bg-slate-50'>
+      <form action="" className=' p-7 text-black flex flex-col justify-center gap-2 rounded-xl w-fit' onSubmit={handleSubmit(formSubmitHandler)}>
+        <input className='p-3 border-b-2 w-[400px]  border-black rounded' {...register("image",{required:true})} type="url"  placeholder='Image'/> { errors.image? <p className='text-red-600 mb-2  text-md font-serif'>Enter Image URL</p>:""}
+        <input className='p-3 border-b-2  w-[400px] w- border-black rounded' {...register("title", {required:true})}type="text" placeholder='Title' /> { errors.title? <p className='text-red-600 mb-2 text-md font-serif'>Fill title</p>:""}
+        <input className='p-3 border-b-2  w-[400px] w- border-black rounded' {...register("chefname", {required:true})}type="text" placeholder='Chef Name' /> { errors.chefname? <p className='text-red-600 mb-2 text-md font-serif'>Fill Chef Name</p>:""}
+        <textarea className='p-3 rounded border-b-2 border-black' {...register("description")}  placeholder='Enter description'></textarea>
+        <textarea className='p-3 rounded border-b-2 border-black' {...register("instructions")}  placeholder='Enter instructions'></textarea>
+        <textarea className='p-3 rounded border-b-2 border-black' {...register("ingradients")} placeholder='Enter ingradients'></textarea>
+        <select className='text-black font-[poppins] text-sm bg-gray-100 p-3 rounded border-b-2 border-black' name="" id="" {...register("catagory", {required:true})}>
           <option value="">Select your catagory</option>
           <option className='bg-white text-gray-500' value="Indian"> Indian</option>
           <option className='bg-white text-gray-500' value="Foreign"> Foreign</option>
           <option className='bg-white text-gray-500' value="Rural/ Domestic"> Rural/ Domestic</option>
         </select> { errors.catagory? <p className='text-red-600 mb-2 text-md font-serif'>Select Catagory</p>:""}
-        <button className='bg-black rounded w-fit text-white m-auto px-3 py-2 active:scale-90 w-fit'>Register Recipe</button>
+        <button className='bg-black rounded w-fit text-white m-auto px-3 py-2 active:scale-90'>Register Recipe</button>
       
       </form>
     </div>
