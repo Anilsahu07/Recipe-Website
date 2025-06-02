@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className='w-screen flex flex-col box-border items-end'>
-      <div className='w-full bg-black flex items-center justify-around lg:pt-36 lg:py-3 px-0 py-2 '>
+      <div className='w-full bg-black flex items-center justify-around lg:pt-36 lg:py-3 px-0 py-4 '>
         <h1 className='text-white lg:text-6xl text-4xl font-bold flex justify-center items-center'><small className='text-orange-600 lg:text-6xl text-4xl font-bold flex justify-center items-center'>F</small>ood <small className='text-orange-500 lg:text-6xl text-4xl'>.</small></h1>
         <div className=''>
          <Navbar />
