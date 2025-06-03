@@ -26,7 +26,7 @@ const App = () => {
   if (menu) {
      gsap.to(menuRef.current,{
       duration:1,
-      top:75,
+      top:72,
       opacity:1,
       background:"whitesmoke",
       ease:"bounce"
@@ -40,7 +40,7 @@ const App = () => {
 
 
   return (
-    <div className='w-screen flex flex-col box-border items-end'>
+    <div className='flex flex-col box-border items-end'>
       <div className='w-full bg-black flex items-center justify-around lg:pt-36 lg:py-3 px-0 py-4 '>
         <h1 className='text-white lg:text-6xl text-4xl font-bold flex justify-center items-center'><small className='text-orange-600 lg:text-6xl text-4xl font-bold flex justify-center items-center'>F</small>ood <small className='text-orange-500 lg:text-6xl text-4xl'>.</small></h1>
         <div className=''>
@@ -59,14 +59,14 @@ const App = () => {
         </div> 
       </div>
       {menu&&
-          <div ref={menuRef} className='w-1/2 flex flex-col gap-3 px-6 py-6 absolute top-[7%]'>
-             <Link className='font-[montserrat] text-sm font-light text-black ' to="/">HOME</Link>
-             <Link className='font-[montserrat] text-sm font-light text-black' to="/recipes/about">ABOUT</Link>
+          <div ref={menuRef} className='w-1/2 flex flex-col justify-around items-center px-6 py-6 absolute top-[7%] z-50 hover:bg-zinc-100  h-1/2'>
+             <Link className='font-[montserrat] text-sm font-semibold text-black ' to="/">HOME</Link>
+             <Link className='font-[montserrat] text-sm font-semibold text-black' to="/recipes/about">ABOUT</Link>
              <Link className='font-[montserrat] text-sm font-semibold text-red-600 hover:text-white' to="/recipes/create">CREATE</Link>
-             <Link className='font-[montserrat] text-sm font-light text-black' to="/favourite">FAVOURITE</Link>
-             <Link className='font-[montserrat] text-sm font-light text-black' to="*">PAGE NOT FOUND</Link>
-             <Link className='font-[montserrat] text-sm font-light text-black' to="/recipes">RECIPES</Link>
-             <Link className='font-[montserrat] text-sm font-light text-black' to="/recipes/update">UPDATE</Link>
+             <Link className='font-[montserrat] text-sm font-semibold text-black' to="/favourite">FAVOURITE</Link>
+             {/* <Link className='font-[montserrat] text-sm font-light text-black' to="*">PAGE NOT FOUND</Link> */}
+             <Link className='font-[montserrat] text-sm font-semibold text-black' to="/recipes">RECIPES</Link>
+             <Link className='font-[montserrat] text-sm font-semibold text-black' to="/recipes/update">UPDATE</Link>
           </div>
           }
 
